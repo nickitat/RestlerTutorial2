@@ -22,7 +22,6 @@ public class SendRequest {
         Restler builder = new Restler("http://localhost:8080/webapi/solve/", springSupport);
         Service service = builder.build();
         serverController = service.produceClient(ServerController.class);
-
         serverController.handleQuery("0");
     }
 
